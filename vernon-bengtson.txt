@@ -1,0 +1,115 @@
+link to finish codepen  https://codepen.io/VABIII/pen/vYZGOeo?editors=1000
+
+    1. What is Semantic HTML?
+    it introduces meaning to the web page rather 
+    than just presentation 
+    2. What is HTML used for? 
+    creating web pages and tells the browser how to display them 
+    3. What is an attribute and where do we put it? 
+    it is a special word used inside the opening tag to control
+    the elements behaviour
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    defines the most important heading and can only be used once
+    5. Name two tags that have required attributes
+    img and anchor tags
+    6. What do we put in the head of our HTML document? 
+    specific information about the web page that is not displayed to the user
+    7. What is an id?
+    an element attribute used identify specific elements 
+    8. What elements can I add an id to? 
+    Any HTML element will contain the id attribute
+    9. How many times can I use the same id on a page?
+    Once 
+    10. What is a class? 
+    specifies one or more class names for an element.
+     Classes are used by CSS and JavaScript to select and access specific elements. 
+    11. What elements can I add a class to? 
+    The class attribute is availible to all 
+    HTML elements.
+    12. How many times can I use the same class on a page?
+     There is no limit
+    13. How do I get my link to open in a new tab?
+    target= "_blank";
+    14. What is the alt attribute in the image tag used for? 
+    to provide additional information for the image if for some
+    reason the image does not load correctly
+    15. How do I reference an id?
+    # followed by the id name 
+    16. What is the difference between a section and a div
+    Section means that the content inside is grouped and relates to 
+    a single theme. Div does not convey any meaning outside of 
+    what is found in its attributes
+    17. What is CSS used for? 
+    Defining the styles for web pages
+    18. How to we select an element? Example - every h2 on the page
+    elment name (ex h2, a, p, div) followed by {} - css selector
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+    The difference is unique to only one element and can only be used Once
+    per page while a class selector can apply to multiple elements.
+    You would use an id to refer to a certain <p> attribute Once
+    while class would be used to refer to multiple elements
+    20. How do we select classes in CSS?
+    . followed by the class name {}
+    21. How do we select a p element with a single class of “human””?
+    .humans {}
+    22. What is a parent child selector? When would this be useful? 
+    The parent child selector selects all elements that are a direct child of the 
+    specified element
+    23. How do you select all links within a div with the class of sidebar?
+    div .sidebar {} The space between div and link means it will 
+    be applied to all links inbetween the div tags
+    24. What is a pseudo selector?
+    a keyword added to a selector that lets you style a specific part 
+    of the selected elements
+    25. What do we use the change the spacing between lines?
+    line-height
+    26. What do we use to change the spacing between letters?
+    letter-spacing 
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    text-transform property with values of uppercase, lowercase, Capitalize
+    28. How do I add a 1px border around my div that is dotted and black?
+    div {
+        border: dashed;
+        border-width: 1px;
+        border-color: black;
+    }
+    29. How do I select everything on the page? 
+    * the universal selector
+    30. How do I write a comment in CSS?
+    /**/ anything inbetween the *'s is considered a comment and not read as part of code
+    31. How do I find out what file I am in, when I am using the command line? 
+    pwd
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this?
+    rm It will not give you a warning before it deletes
+    34. Why should I use version control? 
+    it helps keep track of changes and keeps every team member working off the latest version
+    35. How often should I commit to github?
+    every 20 mins
+    36. What is the command we would use to push our repo up to github? 
+    git push -u origin branch-name
+    37. Walk me through Lambda's git flow. 
+    fork, copy clone ssh link, in terminal cd into destination folder for clone,
+    replace link with whatever the ssh key os for your repo, cd into new repo, 
+    create new branch using the checkout cmd, then open current repo in VS Code,
+    do work and save it, add repo changes withh git add . cmd, then commit changes
+    with commit cmd, the use push cmd to push changes back upstream, enter ssh key, 
+    go to repo on GitHub, select yur name instead of master in dropdown menu top left,
+    create pull request, change 'base repository' to 'mine', submit pull request,
+    copy url and submit.
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    inline elements do not start on a new line while a block element always
+    starts on a new line
+    2. What happens when an element is positioned absolutely? 
+    it is positioned relative to the nearest positioned ancestor, but if it 
+    has no positioned ancestor, it uses the the document body and moves along with 
+    page scrolling.
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+    make it an inline element
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    div, p, section.  span and anchor. display 
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
